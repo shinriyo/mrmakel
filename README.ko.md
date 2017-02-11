@@ -16,3 +16,6 @@
 | mkjava | create template for Java. |
 | mkc | create template for C. |
 | mkchromeext | create template for Chrome Extension. |
+| mkelectron | create template for Electron. |
+| mkwebpackconf | create template for webpack.config.js |
+

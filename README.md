@@ -44,6 +44,8 @@ fisher shinriyo/mrmakel
 | mkjava | create template for Java. |
 | mkc | create template for C. |
 | mkchromeext | create template for Chrome Extension. |
+| mkelectron | create template for Electron. |
+| mkwebpackconf | create template for webpack.config.js |
 
 [travis-link]: https://travis-ci.org/shinriyo/mrmakel
 [travis-badge]: https://img.shields.io/travis/shinriyo/mrmakel.svg
