@@ -1,4 +1,17 @@
-# mrmakel
+[日本語]: README.jp.md
+[繁體中文]: README.zh-tw.md
+[简体中文]: README.zh-cn.md
+[한국어]: README.ko.md
+[Русский]: README.ru.md
+[Português]: README.pt.md
+[Türkçe]: README.tr.md
+[Español]: README.es.md
+[Français]: README.fr.md
+[Català]: README.ca.md
+[Deutsch]: README.du.md
+[فارسی]: README.fa.md
+
+# Mr.Makel
 
 [![Build Status][travis-badge]][travis-link]
 [![Slack Room][slack-badge]][slack-link]
@@ -31,10 +44,6 @@ fisher shinriyo/mrmakel
 | mkjava | create template for Java. |
 | mkc | create template for C. |
 | mkchromeext | create template for Chrome Extension. |
-
-```fish
-mrmakel
-```
 
 [travis-link]: https://travis-ci.org/shinriyo/mrmakel
 [travis-badge]: https://img.shields.io/travis/shinriyo/mrmakel.svg

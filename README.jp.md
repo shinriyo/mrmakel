@@ -1,5 +1,21 @@
 # Mr.Makel
 
+[![Build Status][travis-badge]][travis-link]
+[![Slack Room][slack-badge]][slack-link]
+
+ショートカットを簡単に作れるコマンド。
+ミスターメイケル。
+
+## Install
+
+With [fisherman]
+
+```
+fisher shinriyo/mrmakel
+```
+
+## Usage
+
 ### 便利ショートカット
 
 | Shortcut command | comment |
