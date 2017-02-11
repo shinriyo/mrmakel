@@ -50,7 +50,7 @@ Translations: [日本語], [繁體中文], [简体中文], [한국어], [Рус�
         end
     end
     string trim '# '$argv'
-English
+Japanese
 ' > ./README.jp.md
 
     # Chinese
@@ -95,7 +95,7 @@ Chinese
         end
     end
     string trim '# '$argv'
-English
+Korean
 ' > ./README.ko.md
 
     # Russia
