@@ -5,14 +5,59 @@ function mkelectron
        return
     end
 
-    string trim '
-#include <stdio.h>
+    string trim "
+'use strict';
 
-int main(int argc, char *args[])
-{
-    printf("Hello, world!\n");
-    return 0;
+var app = require('app');
+var BrowserWindow = require('browser-window');
+
+require('crash-reporter').start();
+
+var mainWindow = null;
+
+app.on('window-all-closed', function() {
+  if (process.platform != 'darwin') {
+    app.quit();
+  }
+});
+
+app.on('ready', function() {
+  mainWindow = new BrowserWindow({width: 1200, height: 800});
+  mainWindow.loadUrl('file://' + __dirname + '/index.html');
+  mainWindow.openDevTools(true);
+
+  mainWindow.on('closed', function() {
+    mainWindow = null;
+  });
+});
+" > ./main.js
+    echo './main.js file was created.'
+
+string trim "
+<html>
+  <body>
+    <div id="app"></div>
+    <script src="dist/build.js"></script>
+  </body>
+</html>
+" > ./index.html
+    echo './index.html file was created.'
+
+string trim "
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+
+class App extends Component {
+  render() {
+    <webview src="http://.com" autosize="on"></webview>
+  }
 }
-' > ./$argv.c
-    echo './'$argv'.c file was created.'
+
+render(
+  <App />,
+  document.getElementById('app')
+)
+" > ./app.js
+    echo './app.js file was created.'
+
 end
