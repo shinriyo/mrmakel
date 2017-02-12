@@ -34,4 +34,5 @@ fisher shinriyo/mrmakel
 | mkchromeext | create template for Chrome Extension. |
 | mkelectron | create template for Electron. |
 | mkwebpackconf | create template for webpack.config.js |
+| mkfalcon | create template for Falcon in Python |
 
